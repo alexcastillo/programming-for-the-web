@@ -1,0 +1,196 @@
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+/**
+ * A simple theme for reveal.js presentations, similar 
+ * to the default theme. The accent color is darkblue.
+ * 
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+    font-family: 'Crete Round', 'Pontano Sans', sans-serif;
+    min-height: 740px;
+    color: #385a67;
+    
+    background: rgb(245, 252, 255);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgb(237, 244, 246)));
+    background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(237, 244, 246));
+    background:    -moz-radial-gradient(rgb(255, 255, 255), rgb(245, 252, 255));
+    background:     -ms-radial-gradient(rgb(255, 255, 255), rgb(245, 252, 255));
+    background:      -o-radial-gradient(rgb(255, 255, 255), rgb(245, 252, 255));
+    background:         radial-gradient(rgb(255, 255, 255), rgb(245, 252, 255));    
+}
+
+.d3-brand {
+	position: absolute;
+	left: 40px;
+	bottom: 40px;
+	line-height: 115%;
+}
+
+.d3-logo {
+	margin-bottom: 8px;
+}
+
+.d3-subtitle {
+	font-size: 13px;
+	opacity: 0.6;
+}
+
+.d3-author {
+	font-size: 12px;
+	opacity: 0.4;
+}
+
+.d3-author a.download-lnk {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.d3-watermark {
+	width: 800px;
+	height: 447px;
+	background-image: url('../../images/d3-watermark.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -5%;
+	bottom: -9%;
+	opacity: 0.1;
+}
+
+.reveal {
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  color: white;
+  background: #00A4E4;
+  text-shadow: none;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #00a4e4;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-shadow: none;
+  letter-spacing: -1px;
+}
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #385a67;
+  text-decoration: underline;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease;
+}
+
+.reveal a:not(.image):hover {
+  color: #00A4E4;
+  text-shadow: none;
+  border: none;
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #00A4E4;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px;
+  /*background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #00a4e4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #385a67;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.left,
+.reveal .controls div.left.enabled {
+  border-right-color: #385a67;
+}
+
+.reveal .controls div.right,
+.reveal .controls div.right.enabled {
+  border-left-color: #385a67;
+}
+
+.reveal .controls div.up,
+.reveal .controls div.up.enabled {
+  border-bottom-color: #385a67;
+}
+
+.reveal .controls div.down,
+.reveal .controls div.down.enabled {
+  border-top-color: #385a67;
+}
+
+.reveal .controls div.left.enabled:hover {
+  border-right-color: #00A4E4;
+}
+
+.reveal .controls div.right.enabled:hover {
+  border-left-color: #00A4E4;
+}
+
+.reveal .controls div.up.enabled:hover {
+  border-bottom-color: #00A4E4;
+}
+
+.reveal .controls div.down.enabled:hover {
+  border-top-color: #00A4E4;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.reveal .progress span {
+  background: #385a67;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
