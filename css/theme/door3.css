@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
 /**
  * A simple theme for reveal.js presentations, similar 
  * to the default theme. The accent color is darkblue.
@@ -11,7 +10,7 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-    font-family: 'Crete Round', 'Pontano Sans', sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     min-height: 740px;
     color: #385a67;
     
@@ -89,6 +88,7 @@ body {
   text-transform: none;
   text-shadow: none;
   letter-spacing: -1px;
+  font-weight: 700;
 }
 
 .reveal h1 {
