@@ -12,15 +12,7 @@
 body {
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     min-height: 740px;
-    color: #385a67;
-    
-    background: rgb(245, 252, 255);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255, 255, 255)), to(rgb(237, 244, 246)));
-    background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(237, 244, 246));
-    background:    -moz-radial-gradient(rgb(255, 255, 255), rgb(245, 252, 255));
-    background:     -ms-radial-gradient(rgb(255, 255, 255), rgb(245, 252, 255));
-    background:      -o-radial-gradient(rgb(255, 255, 255), rgb(245, 252, 255));
-    background:         radial-gradient(rgb(255, 255, 255), rgb(245, 252, 255));    
+    color: #444444;
 }
 
 .d3-brand {
@@ -49,17 +41,6 @@ body {
 	color: inherit;
 }
 
-.d3-watermark {
-	width: 800px;
-	height: 447px;
-	background-image: url('../../images/d3-watermark.svg');
-	background-repeat: no-repeat;
-	position: absolute;
-	right: -5%;
-	bottom: -9%;
-	opacity: 0.1;
-}
-
 .reveal {
   font-size: 36px;
   font-weight: 200;
@@ -68,7 +49,7 @@ body {
 
 ::selection {
   color: white;
-  background: #00A4E4;
+  background: #d10000;
   text-shadow: none;
 }
 
@@ -82,13 +63,21 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #00a4e4;
+  color: #444444;
   line-height: 110%;
   letter-spacing: 0.02em;
   text-transform: none;
   text-shadow: none;
-  letter-spacing: -1px;
-  font-weight: 700;
+  letter-spacing: -2px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: 300;
 }
 
 .reveal h1 {
@@ -99,7 +88,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #385a67;
+  color: #444444;
   text-decoration: underline;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -109,14 +98,14 @@ body {
 }
 
 .reveal a:not(.image):hover {
-  color: #00A4E4;
+  color: #d10000;
   text-shadow: none;
   border: none;
 }
 
 .reveal .roll span:after {
-  color: #fff;
-  background: #00A4E4;
+  color: #ffffff;
+  background: #d10000;
 }
 
 /*********************************************
@@ -145,38 +134,38 @@ body {
  *********************************************/
 .reveal .controls div.left,
 .reveal .controls div.left.enabled {
-  border-right-color: #385a67;
+  border-right-color: #444444;
 }
 
 .reveal .controls div.right,
 .reveal .controls div.right.enabled {
-  border-left-color: #385a67;
+  border-left-color: #444444;
 }
 
 .reveal .controls div.up,
 .reveal .controls div.up.enabled {
-  border-bottom-color: #385a67;
+  border-bottom-color: #444444;
 }
 
 .reveal .controls div.down,
 .reveal .controls div.down.enabled {
-  border-top-color: #385a67;
+  border-top-color: #444444;
 }
 
 .reveal .controls div.left.enabled:hover {
-  border-right-color: #00A4E4;
+  border-right-color: #777777;
 }
 
 .reveal .controls div.right.enabled:hover {
-  border-left-color: #00A4E4;
+  border-left-color: #777777;
 }
 
 .reveal .controls div.up.enabled:hover {
-  border-bottom-color: #00A4E4;
+  border-bottom-color: #777777;
 }
 
 .reveal .controls div.down.enabled:hover {
-  border-top-color: #00A4E4;
+  border-top-color: #777777;
 }
 
 /*********************************************
@@ -187,10 +176,14 @@ body {
 }
 
 .reveal .progress span {
-  background: #385a67;
+  background: #444444;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+.reveal .slides {
+  top: 40%;
 }
